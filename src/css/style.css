@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 .banner{
   background-image: url("../images/bannerHeader.png");
   background-color: #111111;
@@ -5,12 +6,33 @@
   background-position: center;  
   height: 810px;
   width: 100%;
-  margin-top: 95px;
+  margin-top: 98px;
 }
 
+.copyright{
+  width: 125px;
+  height: auto;
+}
+
+.content{
+  height: auto;
+  width: 100%;
+  font-size: 22px;
+  line-height: 46px;
+  font-family: Lato;
+}
+
+.bg-pastel-yellow{
+  background:#FCFBDF;
+}
 
 @media (max-width: 575.98px) { 
   .banner{
     background-position-x: 62%;
+  }
+  .content{
+    font-size:18px;
+    font-size: 20px;
+
   }
  }
