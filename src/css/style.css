@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
 .banner{
   background-image: url("../images/bannerHeader.png");
   background-color: #111111;
@@ -13,7 +18,14 @@
   width: 125px;
   height: auto;
 }
-
+.btnSocial{
+  color: #111111;
+  text-decoration: none;
+  transition: 500ms;
+}
+.btnSocial:hover{
+  color:#fcf9a6;
+}
 .content{
   height: auto;
   width: 100%;
@@ -23,16 +35,16 @@
 }
 
 .bg-pastel-yellow{
-  background:#FCFBDF;
+  background:#fcf9a6;
 }
 
 @media (max-width: 575.98px) { 
   .banner{
     background-position-x: 62%;
   }
+  
   .content{
     font-size:18px;
     font-size: 20px;
-
   }
  }

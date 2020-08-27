@@ -5,15 +5,19 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="keywords" content="chopp, bebida, festa, jbprates, heikel, cascavel, "/>
+    <meta name="description" content="O melhor chopp para sua festa, aniversario, casamento, confraternização da empresa ou aquele churrasco do final de semana o chopp Heikel cambina com todos.">
+    <link rel="shortcut icon" href="src/images/icon.png"/>
+    <meta name="google-site-verification" content="Ptc9qSJ9FT96G07Kg0I7H_WeNynGWDjxGOIcL3lSIPM" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://kit.fontawesome.com/9fb7a5f18b.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-warning">
 
-      <div class="container">
+      <div class="container" id="home">
         <a class="navbar-brand" href="#">
           <img src="./src/images/logo.png" alt="Logo JB Prates">
         </a>
@@ -24,20 +28,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Início</a>
+              <a class="nav-link" id="link1" href="#">Início</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Produto</a>
+              <a class="nav-link" id="link2" href="#">Produto</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link " href="#">Contato</a>
+              <a class="nav-link" id="link3"  href="#">Contato</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="banner  ">
+    <div class="banner">
       <div class="container">
         <div class="d-flex flex-column ">
           <div class="p-1 mt-5">
@@ -51,16 +55,15 @@
             </p>
           </div>
           <div class="p-2">
-            <a href="" class="btn btn-warning  text-white" style="margin-left:30%;" ><h5>Saiba mais!</h5></a>
+            <a href="#" id="link4" class="btn btn-warning  text-white" style="margin-left:30%;" ><h5>Saiba mais!</h5></a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container mt-5">
-
-      <div class="row d-flex justify-content-center text-center">
-        <h1 class="mb-5">Chopp</h1>
+    <div class="container mt-5" id="product">      
+      <div class="row d-flex justify-content-center text-center mt-5 p-5">
+        <h1 class="mb-5 mt-5 pt-3" >Chopp</h1>
       </div>
       <div class="row">
         <div class="col-md-4 mb-5 col-sm-12">
@@ -86,8 +89,8 @@
       </div>
     </div>    
 
-   <div class="content bg-pastel-yellow">
-      <div class="container">
+   <div class="content bg-pastel-yellow " id="about">
+      <div class="container p-5" >
         <div class="row d-flex align-items-center">
           <div class="col-md-6 col-sm-12"> 
             <img src="./src/images/image04.png" class="img-fluid" alt="">  
@@ -99,16 +102,92 @@
       </div>
    </div>
 
-
-    <footer class="footer bg-warning  text-black mt-2 p-2">
-      <div class="container text-center">
-          Desenvolvido por: <a href="http://thsstudio.com.br" target="_blank"><img class="copyright" src="./src/images/logo_ths.png" alt=""></a>
+   <div class="container mt-5" id="msg">
+      <div class="row d-flex justify-content-center ">
+        <h1  class="mb-5 mt-5 pt-3">Mande sua mensagem:</h1>
       </div>
+
+     <form action="">
+        <div class="row p-1 mt-2">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="name">Nome completo:</label>
+              <input type="text"
+                class="form-control" name="" id="name" placeholder="Ex: João da Silva">
+            </div>
+          </div>
+        </div>
+       <div class="row p-1 mt-2">
+         <div class="col-md-6 col-sm-12">
+          <div class="form-group">
+            <label for="phone">Telefone:</label>
+            <input type="text"
+              class="form-control" name="" id="phone" placeholder="(45) 9 9988-7766">
+          </div>
+         </div>
+         <div class="col-md-6 col-sm-12">
+          <div class="form-group">
+            <label for="e-mail">E-mail:</label>
+            <input type="text"
+              class="form-control" name="" id="e-mail" placeholder="exemplo@exemplo.com">
+          </div>
+         </div>
+       </div>
+       <div class="row p-1 mt-2">
+          <div class="col-md-12 col-sm-12">
+            <div class="form-group">
+              <label for="">Mensagem:</label>
+              <textarea class="form-control" name="" id="" rows="3" placeholder="Digite sua mensagem ..."></textarea>
+            </div>
+          </div>
+       </div>
+       <div class="row d-flex justify-content-center">
+         <input class="btn btn-warning"  value="Enviar" type="submit">
+                    
+         <input  class="btn btn-white border  border-warning ml-2" value="Limpar" type="reset">
+                    
+       </div>
+     </form>
+   </div>
+
+
+    <footer class="footer bg-warning  text-black mt-5">
+      <div class="container mt-5 ">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 mt-5 text-center"> 
+            <p>
+              Rua Perdizes, Nº 102 - Bairro floresta, <br>
+              Cascavel - PR, CEP: 85814-480
+
+            </p>
+          
+          </div>
+          <div class="col-md-6 col-sm-12 mt-5 text-center">
+            <a href="http://" target="_blank" rel="noopener noreferrer" class="btnSocial">
+              <i class="fab fa-facebook-square ml-3" style="font-size:50px;"></i>
+            </a>
+
+            <!-- <a href="http://" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram-square ml-3" style="font-size:50px;"></i>              
+            </a>
+             -->
+            <a href="https://api.whatsapp.com/send?phone=5545998287140&text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20pedido%20de%20chopp%3F%20" class="btnSocial" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp-square ml-3" style="font-size:50px;" ></i>
+            </a> 
+          </div>
+        </div>
+      </div>  
+      <div class="container text-center pb-2">
+        Desenvolvido por: <a href="http://thsstudio.com.br" target="_blank"><img class="copyright" src="./src/images/logo_ths.png" alt=""></a>
+    </div>    
     </footer>
+    
     <!-- Optional JavaScript -->
+    <script src="src/js/app.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
+
